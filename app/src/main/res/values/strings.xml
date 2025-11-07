@@ -4,4 +4,6 @@
     <string name="student_name">Wahyu Agung P</string>
     <string name="student_id">20230140068</string>
     <string name="submit_button">Submit</string>
+    <string name="form_title">Formulir Pendaftaran Peserta</string>
+    <string name="label_nama_lengkap">Nama Lengkap</string>
 </resources>
