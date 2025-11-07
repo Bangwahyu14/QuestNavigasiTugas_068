@@ -61,6 +61,12 @@ fun WelcomeScreen(modifier: Modifier) {
                 fontWeight = FontWeight.Medium,
                 textAlign = TextAlign.Center
             )
+            Text(
+                text = "20230140068",
+                fontSize = 16.sp,
+                color = Color.Gray
+            )
+
 
 
         }
