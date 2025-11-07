@@ -68,4 +68,15 @@ fun FormScreen(modifier: Modifier = Modifier) {
 
         Spacer(modifier = Modifier.height(16.dp))
 
+        Text(text = stringResource(R.string.label_status_perkawinan), fontWeight = FontWeight.Medium)
+        OutlinedTextField(
+            value = statusPerkawinan,
+            onValueChange = { statusPerkawinan = it },
+            label = { Text(stringResource(R.string.label_status_perkawinan)) },
+            modifier = Modifier.fillMaxWidth()
+        )
+
+        Spacer(modifier = Modifier.height(16.dp))
+
+
 
