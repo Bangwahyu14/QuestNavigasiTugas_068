@@ -40,3 +40,11 @@ fun FormScreen(modifier: Modifier = Modifier) {
         verticalArrangement = Arrangement.Top,
         horizontalAlignment = Alignment.Start
     )
+    {
+        Text(
+            text = stringResource(R.string.form_title), // 🔧 teks diambil dari strings.xml
+            fontSize = 24.sp,
+            fontWeight = FontWeight.Bold,
+            color = Color(0xFF4B4BFF),
+            modifier = Modifier.padding(bottom = 24.dp)
+        )
