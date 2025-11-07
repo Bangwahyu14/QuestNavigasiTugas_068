@@ -75,7 +75,11 @@ fun WelcomeScreen(modifier: Modifier) {
                     .fillMaxWidth(0.6f)
                     .height(50.dp)
             ) {
-
+                Text(text = "Submit", fontSize = 16.sp, color = Color.White)
+            }
         }
+    }
+}
+
 
 
