@@ -49,6 +49,12 @@ fun WelcomeScreen(modifier: Modifier) {
                 color = Color(0xFF4B4BFF),
                 modifier = Modifier.padding(bottom = 30.dp)
             )
+            Image(
+                painter = painterResource(id = R.drawable.logo_man_united),
+                contentDescription = "Logo CARD-LST",
+                modifier = Modifier.size(180.dp)
+            )
+
         }
 
 
