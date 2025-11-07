@@ -90,6 +90,27 @@ fun FormScreen(modifier: Modifier = Modifier) {
 
         Spacer(modifier = Modifier.height(24.dp))
 
+        Button(
+            onClick = {
+                println("Nama: ${namaLengkap.text}")
+                println("Jenis Kelamin: ${jenisKelamin.text}")
+                println("Status: ${statusPerkawinan.text}")
+                println("Alamat: ${alamat.text}")
+            },
+            modifier = Modifier
+                .fillMaxWidth()
+                .height(50.dp),
+            colors = ButtonDefaults.buttonColors(containerColor = Color(0xFF6C63FF))
+        ) {
+            Text(
+                text = stringResource(R.string.submit_button),
+                color = Color.White,
+                fontSize = 16.sp
+            )
+        }
+    }
+}
+
 
 
 
