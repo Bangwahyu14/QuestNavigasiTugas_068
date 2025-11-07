@@ -36,7 +36,9 @@ class MainActivity : ComponentActivity() {
                             )
                         }
                         composable("form") {
-                            FormScreen()
+                            FormScreen(
+                                onBackClick = { navController.navigate("welcome") }
+                            )
                         }
                     }
                 }
