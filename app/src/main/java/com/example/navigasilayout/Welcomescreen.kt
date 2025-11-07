@@ -67,9 +67,14 @@ fun WelcomeScreen(modifier: Modifier) {
                 color = Color.Gray
             )
             Spacer(modifier = Modifier.height(40.dp))
-
-
-
+            Button(
+                onClick = { /* TODO: aksi submit */ },
+                shape = RoundedCornerShape(50),
+                colors = ButtonDefaults.buttonColors(containerColor = Color(0xFF6C63FF)),
+                modifier = Modifier
+                    .fillMaxWidth(0.6f)
+                    .height(50.dp)
+            ) {
 
         }
 
