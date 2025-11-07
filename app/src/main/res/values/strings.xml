@@ -8,4 +8,7 @@
     <string name="label_nama_lengkap">Nama Lengkap</string>
     <string name="label_jenis_kelamin">Jenis Kelamin</string>
     <string name="label_status_perkawinan">Status Perkawinan</string>
+    <string name="label_alamat">Alamat</string>
+    <string name="button_submit_form">Submit</string>
+    <string name="label_data_diri">Data Diri:</string>
 </resources>
