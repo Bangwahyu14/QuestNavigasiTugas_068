@@ -55,6 +55,13 @@ fun WelcomeScreen(modifier: Modifier) {
                 modifier = Modifier.size(180.dp)
             )
             Spacer(modifier = Modifier.height(20.dp))
+            Text(
+                text = "Wahyu agung p.",
+                fontSize = 18.sp,
+                fontWeight = FontWeight.Medium,
+                textAlign = TextAlign.Center
+            )
+
 
         }
 
