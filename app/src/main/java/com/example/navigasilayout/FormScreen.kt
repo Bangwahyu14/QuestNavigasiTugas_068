@@ -48,3 +48,13 @@ fun FormScreen(modifier: Modifier = Modifier) {
             color = Color(0xFF4B4BFF),
             modifier = Modifier.padding(bottom = 24.dp)
         )
+        Text(text = stringResource(R.string.label_nama_lengkap), fontWeight = FontWeight.Medium)
+        OutlinedTextField(
+            value = namaLengkap,
+            onValueChange = { namaLengkap = it },
+            label = { Text(stringResource(R.string.label_nama_lengkap)) },
+            modifier = Modifier.fillMaxWidth()
+        )
+
+        Spacer(modifier = Modifier.height(16.dp))
+
