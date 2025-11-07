@@ -54,6 +54,7 @@ fun WelcomeScreen(modifier: Modifier) {
                 contentDescription = "Logo CARD-LST",
                 modifier = Modifier.size(180.dp)
             )
+            Spacer(modifier = Modifier.height(20.dp))
 
         }
 
