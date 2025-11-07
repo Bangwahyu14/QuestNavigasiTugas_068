@@ -66,6 +66,8 @@ fun WelcomeScreen(modifier: Modifier) {
                 fontSize = 16.sp,
                 color = Color.Gray
             )
+            Spacer(modifier = Modifier.height(40.dp))
+
 
 
 
