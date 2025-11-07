@@ -27,7 +27,8 @@ import androidx.compose.runtime.setValue
 
 
 @Composable
-fun FormScreen(modifier: Modifier = Modifier) {
+fun FormScreen(modifier: Modifier = Modifier,
+               onBackClick: () -> Unit) {
     var namaLengkap by remember { mutableStateOf(TextFieldValue("")) }
     var jenisKelamin by remember { mutableStateOf(TextFieldValue("")) }
     var statusPerkawinan by remember { mutableStateOf(TextFieldValue("")) }
@@ -104,6 +105,22 @@ fun FormScreen(modifier: Modifier = Modifier) {
         ) {
             Text(
                 text = stringResource(R.string.submit_button),
+                color = Color.White,
+                fontSize = 16.sp
+            )
+        }
+        Spacer(modifier = Modifier.height(12.dp))
+
+        // 🔧 DITAMBAHKAN: tombol untuk kembali ke beranda
+        Button(
+            onClick = { onBackClick() },
+            modifier = Modifier
+                .fillMaxWidth()
+                .height(50.dp),
+            colors = ButtonDefaults.buttonColors(containerColor = Color.Gray)
+        ) {
+            Text(
+                text = "Kembali ke Beranda",
                 color = Color.White,
                 fontSize = 16.sp
             )
