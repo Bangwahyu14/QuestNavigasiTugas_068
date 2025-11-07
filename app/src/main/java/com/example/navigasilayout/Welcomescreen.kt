@@ -21,13 +21,17 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 
 @Composable
-fun WelcomeScreen(modifier: Modifier) {
+fun WelcomeScreen(
+    modifier: Modifier,
+    onSubmitClicked: () -> Unit
+) {
     Box(
         modifier = Modifier
             .fillMaxSize()
@@ -43,7 +47,7 @@ fun WelcomeScreen(modifier: Modifier) {
             verticalArrangement = Arrangement.Center
         ){
             Text(
-                text = "Selamat Datang",
+                text = stringResource(R.string.welcome_title),
                 fontSize = 28.sp,
                 fontWeight = FontWeight.Bold,
                 color = Color(0xFF4B4BFF),
@@ -56,7 +60,7 @@ fun WelcomeScreen(modifier: Modifier) {
             )
             Spacer(modifier = Modifier.height(20.dp))
             Text(
-                text = "Wahyu agung p.",
+                text = stringResource(R.string.student_id),
                 fontSize = 18.sp,
                 fontWeight = FontWeight.Medium,
                 textAlign = TextAlign.Center
@@ -68,14 +72,17 @@ fun WelcomeScreen(modifier: Modifier) {
             )
             Spacer(modifier = Modifier.height(40.dp))
             Button(
-                onClick = { /* TODO: aksi submit */ },
+                onClick = {  onSubmitClicked() },
                 shape = RoundedCornerShape(50),
                 colors = ButtonDefaults.buttonColors(containerColor = Color(0xFF6C63FF)),
                 modifier = Modifier
                     .fillMaxWidth(0.6f)
                     .height(50.dp)
             ) {
-                Text(text = "Submit", fontSize = 16.sp, color = Color.White)
+                Text(
+                    text = stringResource(R.string.submit_button),
+                    fontSize = 16.sp,
+                    color = Color.White)
             }
         }
     }
