@@ -6,4 +6,6 @@
     <string name="submit_button">Submit</string>
     <string name="form_title">Formulir Pendaftaran Peserta</string>
     <string name="label_nama_lengkap">Nama Lengkap</string>
+    <string name="label_jenis_kelamin">Jenis Kelamin</string>
+    <string name="label_status_perkawinan">Status Perkawinan</string>
 </resources>
