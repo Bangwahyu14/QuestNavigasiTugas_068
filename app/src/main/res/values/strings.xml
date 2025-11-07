@@ -2,4 +2,6 @@
     <string name="app_name">Navigasi Layout</string>
     <string name="welcome_title">Selamat Datang</string>
     <string name="student_name">Wahyu Agung P</string>
+    <string name="student_id">20230140068</string>
+    <string name="submit_button">Submit</string>
 </resources>
